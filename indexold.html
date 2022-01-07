@@ -1,0 +1,84 @@
+<html>
+  <head> 
+  <title>Webovka</title>
+  </head>
+  <body>
+  <body background="robooot.jpg" bgcolor="black">
+           
+               
+              <h1><ul>Rozcestník </h1>
+      <hr size="5" color="red" align="left" noshade>
+      
+      
+      <ol>
+      <b>Moje kotelna:</b><br>
+      <hr width="95" size="5" color="blue" align="left" noshade></p></p> 
+    <a href="http://data.xf.cz/kotelna.php"> Teplota kotel</a> </p>
+    <a href="http://data.xf.cz/ukladanikotel.php"> Manuálni ukládaní teploty</a>     
+      </ol>
+      
+      
+      <hr width="500" size="5" color="red" align="left" noshade>
+      
+      
+       <ol>
+       <b>Pa*** kotelna:</b><br>
+      <hr width="95" size="5" color="blue" align="left" noshade></p></p> 
+    <a href="http://data.xf.cz/kotel.php"> Teplota kotel</a> </p>
+    <a href="http://data.xf.cz/kotelukladaniformular.php"> Manuálni ukládaní teploty</a>     
+      </ol>
+  
+  
+      <hr width="500" size="5" color="red" align="left" noshade>  
+         
+           <ol>
+       <b>EMAIL ODESÍLÁTOR:</b><br>
+      <hr width="165" size="5" color="blue" align="left" noshade></p></p> 
+    <a href="http://data.xf.cz/emaill.php"> Email</a> </p>
+    </ol> 
+    
+    
+      <hr width="500" size="5" color="black" align="left" noshade>  
+        
+         <ol>
+       <b>CODES:</b><br>
+      <hr width="60" size="5" color="blue" align="left" noshade></p></p> 
+    <a href="http://data.xf.cz/code.php"> ESP8266</a> </p>
+    <a href="http://data.xf.cz/code2.php"> ESP32</a> </p>
+    <a href="http://data.xf.cz/code4.php"> CERPANI Z WEBU</a> </p>
+    <a href="http://data.xf.cz/code3.php"> ENCODER</a></p> 
+    <a href="http://data.xf.cz/code6.php"> ESP_nove</a></p>   
+     <a href="http://data.xf.cz/code8.php"> Servotester</a></p> 
+    <a href="http://data.xf.cz/code5.php"> DMX</a> 
+        <?
+include "databaze.php";
+                    
+     
+   $vypis=mysql_query("SELECT * FROM `solar` ORDER BY ID DESC LIMIT 1",$GLOBALS["db_spojeni"]);                     
+       
+      
+           while ($solar = MySQL_Fetch_Array($vypis))  {
+           
+                         
+            echo "".$solar["T1"]."";  
+            echo pes jede; 
+               
+           
+           }
+      
+      ?>
+    <a href="dataxfcz4079-1.doc">stáhnout písemku</a>  
+       </ol> 
+    
+    
+          
+      
+      
+      
+      
+  
+                                                              
+  </body>
+</html>
+      
+    
